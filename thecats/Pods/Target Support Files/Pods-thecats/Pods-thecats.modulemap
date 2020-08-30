@@ -1,0 +1,6 @@
+framework module Pods_thecats {
+  umbrella header "Pods-thecats-umbrella.h"
+
+  export *
+  module * { export * }
+}

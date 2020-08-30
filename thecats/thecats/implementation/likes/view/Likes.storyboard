@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Likes View Controller-->
+        <scene sceneID="1xS-uZ-DtF">
+            <objects>
+                <viewController restorationIdentifier="Likes" storyboardIdentifier="Likes" id="jut-M9-dq6" customClass="LikesViewController" customModule="thecats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbz-wp-lW5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-6n-e9G">
+                                <rect key="frame" x="0.0" y="400" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="qls-XP-8pG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9143672585" green="0.89121931789999997" blue="0.88281565900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ETL-6n-e9G" firstAttribute="centerY" secondItem="dGO-cN-Wdp" secondAttribute="centerY" id="1ld-bP-igM"/>
+                            <constraint firstItem="ETL-6n-e9G" firstAttribute="leading" secondItem="dGO-cN-Wdp" secondAttribute="leading" id="7RU-XP-Svi"/>
+                            <constraint firstItem="dGO-cN-Wdp" firstAttribute="trailing" secondItem="ETL-6n-e9G" secondAttribute="trailing" id="A5w-ir-W32"/>
+                            <constraint firstItem="ETL-6n-e9G" firstAttribute="centerX" secondItem="dGO-cN-Wdp" secondAttribute="centerX" id="qOx-04-9st"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dGO-cN-Wdp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ml0-86-VPd"/>
+                    <connections>
+                        <outlet property="loader" destination="ETL-6n-e9G" id="pmE-1U-CzA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuK-9T-dM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PvY-dY-f95">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jtl-Nc-1lx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rFB-dV-u7A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jut-M9-dq6" kind="relationship" relationship="rootViewController" id="Ap1-bn-Irb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dob-t9-aXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="-74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="828" height="794"/>
+    </resources>
+</document>
